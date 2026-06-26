@@ -139,6 +139,29 @@ export default function Footer() {
     © 2026 A New Tomorrow. All Rights Reserved.
   </p>
 
+  <div className="flex items-center justify-center gap-2 font-semibold text-base md:text-lg tracking-wide">
+
+  <span className="text-gray-500 uppercase">
+    Made with
+  </span>
+
+  <i className="bi bi-heart-fill text-red-500 text-xl animate-pulse"></i>
+
+  <span className="text-gray-500 uppercase">
+    by
+  </span>
+
+  <a
+    href="https://antilabs.in"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-[#2D1A0F] font-bold text-xl hover:text-amber-500 transition"
+  >
+    AntiLabs
+  </a>
+
+</div>
+
   <div className="flex gap-5 text-xl text-gray-500">
 
     {/* Facebook */}
