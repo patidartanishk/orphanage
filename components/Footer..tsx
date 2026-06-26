@@ -133,30 +133,56 @@ export default function Footer() {
         </div>
 
         {/* Bottom */}
+<div className="border-t border-gray-300 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
 
-        <div className="border-t border-gray-300 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
+  <p className="text-gray-600 text-sm">
+    © 2026 A New Tomorrow. All Rights Reserved.
+  </p>
 
-          <p className="text-gray-600 text-sm">
-            © 2026 A New Tomorrow. All Rights Reserved.
-          </p>
+  <div className="flex gap-5 text-xl text-gray-500">
 
-          <div className="flex gap-5 text-xl text-gray-500">
+    {/* Facebook */}
+    <a
+      href="https://www.facebook.com/ebenezerchildcarecentre"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-amber-500 transition"
+      aria-label="Facebook"
+    >
+      <i className="bi bi-facebook"></i>
+    </a>
 
-            <a href="#" className="hover:text-amber-500 transition">
-              <i className="bi bi-facebook"></i>
-            </a>
+    {/* Instagram */}
+    <a
+      href="https://www.instagram.com/ebenezer_childcare_centre/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-amber-500 transition"
+      aria-label="Instagram"
+    >
+      <i className="bi bi-instagram"></i>
+    </a>
 
-            <a href="#" className="hover:text-amber-500 transition">
-              <i className="bi bi-instagram"></i>
-            </a>
+    {/* Google Maps */}
+    <a
+      href="https://maps.google.com/?q=Ebenezer+Child+Care+Centre+Vidyasagar+Layout+Kembathahalli+Cross+Bengaluru+560083"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-amber-500 transition"
+      aria-label="Google Maps"
+    >
+      <i className="bi bi-geo-alt-fill"></i>
+    </a>
 
-            <a href="#" className="hover:text-amber-500 transition">
-              <i className="bi bi-linkedin"></i>
-            </a>
+    {/* Phone */}
+    <a
+      href="tel:+919845216239"
+      className="hover:text-amber-500 transition"
+      aria-label="Phone"
+    >
+      <i className="bi bi-telephone-fill"></i>
+    </a>
 
-            <a href="#" className="hover:text-amber-500 transition">
-              <i className="bi bi-youtube"></i>
-            </a>
 
           </div>
 
