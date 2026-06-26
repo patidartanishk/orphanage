@@ -1,27 +1,30 @@
 import Image from "next/image";
 
 export default function Donate() {
-  const donations = [
-    {
-      amount: "₹500",
-      title: "Food Support",
-      desc: "Provides 21 nutritious meals",
-      icon: "🍲",
-    },
-    {
-      amount: "₹2,000",
-      title: "Education Support",
-      desc: "Books, stationery & learning materials",
-      icon: "📚",
-      featured: true,
-    },
-    {
-      amount: "₹5,000",
-      title: "Healthcare Support",
-      desc: "Medical care & wellness support",
-      icon: "❤️",
-    },
-  ];
+ const donations = [
+  {
+    amount: "₹500",
+    title: "Food Support",
+    desc: "Provides 21 nutritious meals",
+    icon: "bi-cup-hot-fill",
+    color: "text-orange-500",
+  },
+  {
+    amount: "₹2,000",
+    title: "Education Support",
+    desc: "Books, stationery & learning materials",
+    icon: "bi-book-fill",
+    color: "text-amber-500",
+    featured: true,
+  },
+  {
+    amount: "₹5,000",
+    title: "Healthcare Support",
+    desc: "Medical care & wellness support",
+    icon: "bi-heart-pulse-fill",
+    color: "text-rose-500",
+  },
+];
 
   return (
     <section id="donate" className="bg-[#24140d] py-20">
@@ -69,15 +72,9 @@ export default function Donate() {
 
                   <div className="flex items-center gap-5">
 
-                    <div
-                      className={`w-16 h-16 rounded-full flex items-center justify-center text-3xl ${
-                        item.featured
-                          ? "border border-black/20"
-                          : "border border-amber-400"
-                      }`}
-                    >
-                      {item.icon}
-                    </div>
+                   <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
+  <i className={`bi ${item.icon} ${item.color} text-2xl`}></i>
+</div>
 
                     <div>
 
