@@ -9,7 +9,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "A New Tomorrow",
+  title: "Ebenezer Child Care Centre",
   description: "Every child deserves love, care and a future.",
 };
 

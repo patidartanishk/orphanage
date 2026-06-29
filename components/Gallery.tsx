@@ -2,12 +2,12 @@ import Image from "next/image";
 
 export default function Gallery() {
   const images = [
-    "/images/gallery1.png",
-    "/images/gallery2.png",
-    "/images/gallery3.png",
-    "/images/gallery4.png",
-    "/images/gallery5.png",
-    "/images/gallery6.png",
+    "/images/gallery1.jpeg",
+    "/images/gallery2.jpeg",
+    "/images/gallery3.jpeg",
+    "/images/gallery4.jpeg",
+    "/images/gallery5.jpeg",
+    "/images/gallery6.jpeg",
   ];
 
   return (

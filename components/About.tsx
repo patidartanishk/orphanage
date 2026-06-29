@@ -213,7 +213,7 @@ export default function About() {
 
             {/* Main Image */}
             <Image
-              src="/images/about.jpg"
+              src="/images/about.jpeg"
               alt="About Us"
               width={700}
               height={500}

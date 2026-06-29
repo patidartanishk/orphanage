@@ -22,10 +22,10 @@ export default function Hero() {
         <div className="max-w-2xl text-white animate-fadeIn">
 
           {/* Heading */}
-          <h1 className="text-4xl md:text-6xl font-semibold leading-[1.1] tracking-tight max-w-xl">
+          <h1 className="text-3xl md:text-6xl font-semibold leading-[1.1] tracking-tight max-w-xl">
             Every child deserves
             <br />
-            <span className="text-amber-400">
+            <span className="text-amber-300">
               love, care & a future.
             </span>
           </h1>
@@ -37,33 +37,127 @@ export default function Hero() {
           </p>
 
           {/* Trust Indicators */}
-          <div className="flex flex-wrap gap-6 mt-8 text-sm md:text-base font-medium">
+<div className="flex flex-wrap gap-5 mt-8">
 
-            <span className="bg-white/10 px-4 py-2 rounded-full backdrop-blur-sm">
-              ✓ Registered NGO
-            </span>
+  <div
+    className="
+      flex
+      items-center
+      gap-2
+      px-5
+      py-2.5
+      rounded-full
+      bg-white/10
+      backdrop-blur-md
+      border
+      border-white/15
+      shadow-lg
+      hover:bg-white/15
+      transition-all
+      duration-300
+    "
+  >
+    <i className="bi bi-patch-check-fill text-amber-400 text-lg"></i>
+    <span className="text-white text-sm font-medium">
+      Registered NGO
+    </span>
+  </div>
 
-            <span className="bg-white/10 px-4 py-2 rounded-full backdrop-blur-sm">
-              ✓ 15+ Years Service
-            </span>
+  <div
+    className="
+      flex
+      items-center
+      gap-2
+      px-5
+      py-2.5
+      rounded-full
+      bg-white/10
+      backdrop-blur-md
+      border
+      border-white/15
+      shadow-lg
+      hover:bg-white/15
+      transition-all
+      duration-300
+    "
+  >
+    <i className="bi bi-award-fill text-amber-400 text-lg"></i>
+    <span className="text-white text-sm font-medium">
+      15+ Years Service
+    </span>
+  </div>
 
-            <span className="bg-white/10 px-4 py-2 rounded-full backdrop-blur-sm">
-              ✓ 250+ Children Supported
-            </span>
+  <div
+    className="
+      flex
+      items-center
+      gap-2
+      px-5
+      py-2.5
+      rounded-full
+      bg-white/10
+      backdrop-blur-md
+      border
+      border-white/15
+      shadow-lg
+      hover:bg-white/15
+      transition-all
+      duration-300
+    "
+  >
+    <i className="bi bi-people-fill text-amber-400 text-lg"></i>
+    <span className="text-white text-sm font-medium">
+      250+ Children Supported
+    </span>
+  </div>
 
-          </div>
-
+</div>
           {/* Buttons */}
           <div className="flex flex-wrap gap-4 mt-10">
 
-            <button className="bg-amber-500 hover:bg-amber-400 text-black px-8 py-4 rounded-xl font-bold transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-              Support Us
-            </button>
+            <button
+className="
+bg-amber-500
+hover:bg-amber-400
+text-black
+px-9
+py-4
+rounded-xl
+font-semibold
+flex
+items-center
+gap-3
+transition-all
+duration-300
+hover:-translate-y-2
+hover:shadow-2xl
+"
+>
+<i className="bi bi-heart-fill"></i>
+Support Us
+</button>
 
-            <button className="border border-white/60 backdrop-blur-sm px-8 py-4 rounded-xl hover:bg-white hover:text-black transition-all duration-300 hover:-translate-y-2">
-              Learn More
-            </button>
-
+            <button
+className="
+border
+border-white/50
+backdrop-blur-sm
+px-9
+py-4
+rounded-xl
+font-semibold
+flex
+items-center
+gap-3
+hover:bg-white
+hover:text-black
+transition-all
+duration-300
+"
+>
+<i className="bi bi-arrow-right"></i>
+Learn More
+</button>
           </div>
 
         </div>
@@ -71,9 +165,11 @@ export default function Hero() {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white text-2xl animate-bounce">
-        ↓
-      </div>
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+
+<i className="bi bi-chevron-double-down text-white text-3xl"></i>
+
+</div>
 
     </section>
   );

@@ -136,7 +136,7 @@ export default function Footer() {
 <div className="border-t border-gray-300 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
 
   <p className="text-gray-600 text-sm">
-    © 2026 A New Tomorrow. All Rights Reserved.
+    © 2026 Ebenezer Child Care Centre. All Rights Reserved.
   </p>
 
   <div className="flex items-center justify-center gap-2 font-semibold text-base md:text-lg tracking-wide">
