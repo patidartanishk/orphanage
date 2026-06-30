@@ -21,15 +21,17 @@ export default function WhatsAppButton() {
         items-center
         justify-center
 
-        shadow-2xl
-
-        hover:scale-110
-        hover:shadow-[0_20px_40px_rgba(37,211,102,0.45)]
+        shadow-[0_12px_35px_rgba(37,211,102,0.35)]
 
         transition-all
         duration-300
+        ease-in-out
 
-        animate-bounce
+        hover:scale-110
+        hover:-translate-y-1
+        hover:shadow-[0_20px_45px_rgba(37,211,102,0.45)]
+
+        active:scale-95
       "
     >
       <i className="bi bi-whatsapp text-white text-4xl"></i>
