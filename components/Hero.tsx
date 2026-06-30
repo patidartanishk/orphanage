@@ -31,10 +31,10 @@ export default function Hero() {
           </h1>
 
           {/* Description */}
-          <p className="mt-6 text-lg md:text-xl text-gray-200 leading-relaxed">
-            Join hands with us and become a reason for a child's
-            smile, education, and brighter tomorrow.
-          </p>
+          <p className="mt-6 text-base md:text-xl text-gray-200 leading-relaxed max-w-lg">
+  Join hands with us and become a reason for a child&apos;s
+  smile, education, and brighter tomorrow.
+</p>
 
           {/* Trust Indicators */}
 <div className="flex flex-wrap gap-5 mt-8">
@@ -115,49 +115,57 @@ export default function Hero() {
           {/* Buttons */}
           <div className="flex flex-wrap gap-4 mt-10">
 
-            <button
-className="
-bg-amber-500
-hover:bg-amber-400
-text-black
-px-9
-py-4
-rounded-xl
-font-semibold
-flex
-items-center
-gap-3
-transition-all
-duration-300
-hover:-translate-y-2
-hover:shadow-2xl
-"
->
-<i className="bi bi-heart-fill"></i>
-Support Us
-</button>
+  {/* Support Us */}
+  <a
+    href="#donate"
+    className="
+      bg-amber-500
+      hover:bg-amber-400
+      text-black
+      px-9
+      py-4
+      rounded-xl
+      font-semibold
+      flex
+      items-center
+      gap-3
+      transition-all
+      duration-300
+      hover:-translate-y-2
+      hover:shadow-2xl
+    "
+  >
+    <i className="bi bi-heart-fill"></i>
+    Support Us
+  </a>
 
-            <button
-className="
-border
-border-white/50
-backdrop-blur-sm
-px-9
-py-4
-rounded-xl
-font-semibold
-flex
-items-center
-gap-3
-hover:bg-white
-hover:text-black
-transition-all
-duration-300
-"
->
-<i className="bi bi-arrow-right"></i>
-Learn More
-</button>
+  {/* Learn More */}
+  <a
+    href="#about"
+    className="
+      border
+      border-white/60
+      backdrop-blur-sm
+      px-8
+      py-4
+      rounded-xl
+      font-semibold
+      text-white
+      inline-flex
+      items-center
+      gap-3
+      hover:bg-white
+      hover:text-black
+      transition-all
+      duration-300
+      hover:-translate-y-2
+      hover:shadow-xl
+    "
+  >
+    <i className="bi bi-arrow-right"></i>
+    Learn More
+  </a>
+
           </div>
 
         </div>

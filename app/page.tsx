@@ -6,6 +6,7 @@ import Services from "../components/Services";
 import Gallery from "../components/Gallery";
 import Donate from "../components/Donate";
 import Footer from "../components/Footer.";
+import BackToTop from "@/components/BackToTop";
 
 
 export default function Home() {
@@ -19,6 +20,8 @@ export default function Home() {
   <Gallery />
   <Donate />
   <Footer />
+
+  <BackToTop />
     </>
   );
 }

@@ -44,7 +44,7 @@ export default function TermsPage() {
 
             <p>
               All text, images, graphics, logos and website content are
-              the property of A New Tomorrow unless otherwise stated.
+              the property of Ebenezer Child Care Centre unless otherwise stated.
               Unauthorized copying or distribution is prohibited.
             </p>
           </section>
