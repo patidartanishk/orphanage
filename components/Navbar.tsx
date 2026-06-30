@@ -8,34 +8,64 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50">
+
       {/* Navbar */}
       <div className="max-w-7xl mx-auto px-3 md:px-6 py-3">
 
-        <div className="flex items-center justify-between bg-black/20 backdrop-blur-md border border-white/10 rounded-2xl px-4 sm:px-5 lg:px-8 py-3">
+        <div
+          className="
+            flex
+            items-center
+            justify-between
+            bg-[#2D1A0F]/60
+            backdrop-blur-xl
+            border
+            border-white/15
+            rounded-2xl
+            px-4
+            sm:px-5
+            lg:px-8
+            py-3
+            shadow-xl
+          "
+        >
 
-          {/* Logo */}
-          <div className="flex items-center gap-3 md:gap-4">
+          {/* Logo + Name */}
+          <div className="flex items-center gap-4 md:gap-5">
 
-            <div className="w-10 h-10 sm:w-12 sm:h-12 lg:w-16 lg:h-16 flex items-center justify-center">
-
-             <Image
-  src="/images/ebenezer-logo.png"
-  alt="Ebenezer Child Care Centre"
-  width={56}
-  height={56}
-  className="w-full h-full object-contain"
-  priority
-/>
-
+            <div
+              className="
+                w-11 h-11
+                sm:w-12 sm:h-12
+                lg:w-14 lg:h-14
+                rounded-full
+                bg-white
+                border border-white/40
+                shadow-lg
+                flex
+                items-center
+                justify-center
+                overflow-hidden
+                flex-shrink-0
+              "
+            >
+              <Image
+                src="/images/ebenezer-logo.png"
+                alt="Ebenezer Child Care Centre"
+                width={46}
+                height={46}
+                className="object-contain"
+                priority
+              />
             </div>
 
             <div>
 
-             <h1 className="text-sm sm:text-base lg:text-2xl font-bold text-white leading-tight">
+              <h1 className="text-sm sm:text-lg lg:text-[2rem] font-bold text-white tracking-tight leading-tight">
                 Ebenezer Child Care Centre
               </h1>
 
-              <p className="hidden lg:block text-sm text-amber-100 font-medium">
+              <p className="hidden lg:block mt-1 text-sm text-amber-200 font-medium">
                 A Home. A Future. A Hope.
               </p>
 
@@ -95,6 +125,8 @@ export default function Navbar() {
                 gap-2
                 transition-all
                 duration-300
+                hover:-translate-y-1
+                hover:shadow-xl
               "
             >
               <i className="bi bi-heart-fill"></i>
@@ -103,14 +135,12 @@ export default function Navbar() {
 
           </div>
 
-          {/* Mobile Hamburger */}
+          {/* Mobile Menu Button */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             className="lg:hidden text-white text-3xl"
           >
-            <i
-              className={menuOpen ? "bi bi-x-lg" : "bi bi-list"}
-            ></i>
+            <i className={menuOpen ? "bi bi-x-lg" : "bi bi-list"}></i>
           </button>
 
         </div>
@@ -125,14 +155,14 @@ export default function Navbar() {
           <div
             className="
               lg:hidden
+              mt-2
               rounded-2xl
               bg-[#2D1A0F]/95
               backdrop-blur-xl
               border
               border-white/10
-              p-6
-              mt-2
               shadow-2xl
+              p-6
             "
           >
 
@@ -192,6 +222,7 @@ export default function Navbar() {
                   justify-center
                   gap-2
                   transition-all
+                  duration-300
                 "
               >
                 <i className="bi bi-heart-fill"></i>
