@@ -1,67 +1,127 @@
+import Link from "next/link";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 export default function PrivacyPolicy() {
   return (
-    <main className="min-h-screen bg-[#FCF8F2] py-20">
-      <div className="max-w-4xl mx-auto px-8">
+    <>
+      <Navbar />
 
-        <p className="uppercase tracking-[0.35em] text-amber-600 font-semibold">
-          LEGAL
-        </p>
+      <main className="bg-[#FCF8F2] pt-36 pb-24 min-h-screen">
 
-        <h1 className="text-5xl font-bold text-[#2D1A0F] mt-4 mb-10">
-          Privacy Policy
-        </h1>
+        <div className="max-w-4xl mx-auto px-6 lg:px-8">
 
-        <div className="space-y-8 text-gray-700 leading-8">
+          {/* Breadcrumb */}
+          <Link
+            href="/"
+            className="inline-flex items-center gap-2 text-amber-600 hover:text-amber-500 font-medium transition mb-8"
+          >
+            <i className="bi bi-arrow-left"></i>
+            Back to Home
+          </Link>
 
-          <section>
-            <h2 className="text-2xl font-bold text-[#2D1A0F] mb-3">
-              Information We Collect
-            </h2>
+          {/* Heading */}
 
-            <p>
-              We may collect your name, email address, phone number,
-              donation details and any information you submit through
-              our contact forms.
-            </p>
-          </section>
+          <p className="uppercase tracking-[0.35em] text-amber-500 font-semibold mb-4">
+            LEGAL
+          </p>
 
-          <section>
-            <h2 className="text-2xl font-bold text-[#2D1A0F] mb-3">
-              How We Use Information
-            </h2>
+          <h1 className="text-5xl md:text-6xl font-bold text-[#2D1A0F] mb-6">
+            Privacy Policy
+          </h1>
 
-            <p>
-              Your information is used to process donations, respond
-              to enquiries, improve our services and communicate with
-              you when required.
-            </p>
-          </section>
+          <div className="w-20 h-1 rounded-full bg-amber-500 mb-10"></div>
 
-          <section>
-            <h2 className="text-2xl font-bold text-[#2D1A0F] mb-3">
-              Data Security
-            </h2>
+          <p className="text-lg text-gray-600 leading-8 mb-14">
+            Ebenezer Child Care Centre values your privacy and is committed to
+            protecting any personal information you share with us. This Privacy
+            Policy explains how we collect, use and safeguard your information.
+          </p>
 
-            <p>
-              We implement appropriate security measures to safeguard
-              your personal information.
-            </p>
-          </section>
+          {/* Content */}
 
-          <section>
-            <h2 className="text-2xl font-bold text-[#2D1A0F] mb-3">
-              Cookies
-            </h2>
+          <div className="space-y-12 text-gray-700">
 
-            <p>
-              Our website may use cookies to improve user experience
-              and website performance.
-            </p>
-          </section>
+            <section>
+
+              <h2 className="text-3xl font-bold text-[#2D1A0F] mb-5">
+                Information We Collect
+              </h2>
+
+              <p className="leading-8 text-lg">
+                We may collect personal information such as your name,
+                email address, phone number, donation details and any
+                information you voluntarily submit through our contact
+                forms or donation pages.
+              </p>
+
+            </section>
+
+            <section>
+
+              <h2 className="text-3xl font-bold text-[#2D1A0F] mb-5">
+                How We Use Your Information
+              </h2>
+
+              <p className="leading-8 text-lg">
+                Your information is used to process donations,
+                communicate with you, respond to enquiries,
+                improve our services and keep you informed
+                about our activities where appropriate.
+              </p>
+
+            </section>
+
+            <section>
+
+              <h2 className="text-3xl font-bold text-[#2D1A0F] mb-5">
+                Data Security
+              </h2>
+
+              <p className="leading-8 text-lg">
+                We implement appropriate administrative,
+                technical and physical safeguards to protect
+                your personal information from unauthorized
+                access, disclosure or misuse.
+              </p>
+
+            </section>
+
+            <section>
+
+              <h2 className="text-3xl font-bold text-[#2D1A0F] mb-5">
+                Cookies
+              </h2>
+
+              <p className="leading-8 text-lg">
+                Our website may use cookies and similar
+                technologies to improve website performance,
+                analyze visitor behavior and enhance the
+                overall browsing experience.
+              </p>
+
+            </section>
+
+            <section>
+
+              <h2 className="text-3xl font-bold text-[#2D1A0F] mb-5">
+                Policy Updates
+              </h2>
+
+              <p className="leading-8 text-lg">
+                We may update this Privacy Policy from time
+                to time. Any changes will be posted on this
+                page with the revised effective date.
+              </p>
+
+            </section>
+
+          </div>
 
         </div>
 
-      </div>
-    </main>
+      </main>
+
+      <Footer />
+    </>
   );
 }

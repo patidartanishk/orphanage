@@ -28,11 +28,19 @@ export default function Footer() {
             </h4>
 
             <ul className="space-y-3 text-gray-600">
-              <li><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#impact">Impact</a></li>
-              <li><a href="#work">Our Work</a></li>
-              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="/#"  className="hover:text-amber-600 transition">Home</a></li>
+              <li><a href="/#about"  className="hover:text-amber-600 transition">About</a></li>
+              <li><a href="/#impact"  className="hover:text-amber-600 transition">Impact</a></li>
+              <li><a href="/#work"  className="hover:text-amber-600 transition">Our Work</a></li>
+              <li><a href="/#gallery"  className="hover:text-amber-600 transition">Gallery</a></li>
+              <li>
+  <a
+    href="/#visit"
+    className="hover:text-amber-600 transition"
+  >
+    Visit Us
+  </a>
+</li>
             </ul>
           </div>
 
@@ -43,11 +51,10 @@ export default function Footer() {
             </h4>
 
             <ul className="space-y-3 text-gray-600">
-              <li><a href="#donate">Donate</a></li>
-              <li><a href="#">Volunteer</a></li>
+              <li><a href="/#donate"  className="hover:text-amber-600 transition">Donate</a></li>
             </ul>
 
-            <button className="mt-6 bg-amber-500 hover:bg-amber-400 text-black px-6 py-3 rounded-xl font-semibold transition w-full sm:w-auto">
+            <button className="mt-6 bg-amber-500 hover:bg-amber-400 text-black px-8 py-4 rounded-xl font-semibold transition w-full sm:w-auto hover:scale-105">
               Donate Now
             </button>
           </div>
@@ -60,19 +67,19 @@ export default function Footer() {
 
             <ul className="space-y-3 text-gray-600">
               <li>
-                <Link href="/privacy-policy">
+                <Link href="/privacy-policy"  className="hover:text-amber-600 transition">
                   Privacy Policy
                 </Link>
               </li>
 
               <li>
-                <Link href="/terms">
+                <Link href="/terms"  className="hover:text-amber-600 transition">
                   Terms & Conditions
                 </Link>
               </li>
 
               <li>
-                <Link href="/child-protection">
+                <Link href="/child-protection"  className="hover:text-amber-600 transition">
                   Child Protection Policy
                 </Link>
               </li>

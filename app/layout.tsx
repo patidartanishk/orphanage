@@ -10,7 +10,8 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Ebenezer Child Care Centre",
-  description: "Every child deserves love, care and a future.",
+  description:
+    "Every child deserves love, care, education and a brighter future."
 };
 
 export default function RootLayout({

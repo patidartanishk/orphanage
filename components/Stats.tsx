@@ -13,7 +13,7 @@ import {
 export default function Stats() {
   const { ref, inView } = useInView({
   triggerOnce: true,
-  threshold: 0.35,
+  threshold: 0.25,
 });
   const stats = [
     {
@@ -224,17 +224,20 @@ export default function Stats() {
 
       {/* Number */}
 
-      <h3 className="relative z-10 text-[42px] font-bold text-amber-500 leading-none">
-  {inView && (
+    <h3 className="relative z-10 text-[42px] font-bold text-amber-500 leading-none">
+  {inView ? (
     <>
       <CountUp
         start={0}
         end={parseInt(item.number)}
         duration={2.2}
         delay={index * 0.2}
+        separator=","
       />
       +
     </>
+  ) : (
+    "0+"
   )}
 </h3>
 

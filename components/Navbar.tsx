@@ -77,61 +77,62 @@ export default function Navbar() {
           <div className="hidden lg:flex items-center gap-8 text-white">
 
             <a
-              href="#about"
+              href="/#about"
               className="hover:text-amber-400 transition"
             >
               About
             </a>
 
             <a
-              href="#impact"
+              href="/#impact"
               className="hover:text-amber-400 transition"
             >
               Impact
             </a>
 
             <a
-              href="#work"
+              href="/#work"
               className="hover:text-amber-400 transition"
             >
               Our Work
             </a>
 
             <a
-              href="#gallery"
+              href="/#gallery"
               className="hover:text-amber-400 transition"
             >
               Gallery
             </a>
 
             <a
-              href="#donate"
+              href="/#donate"
               className="hover:text-amber-400 transition"
             >
               Donate
             </a>
 
-            <button
-              className="
-                bg-amber-500
-                hover:bg-amber-400
-                text-[#2D1A0F]
-                px-6
-                py-3
-                rounded-xl
-                font-semibold
-                flex
-                items-center
-                gap-2
-                transition-all
-                duration-300
-                hover:-translate-y-1
-                hover:shadow-xl
-              "
-            >
-              <i className="bi bi-heart-fill"></i>
-              Donate Now
-            </button>
+            <a
+  href="/#donate"
+  className="
+    bg-amber-500
+    hover:bg-amber-400
+    text-[#2D1A0F]
+    px-6
+    py-3
+    rounded-xl
+    font-semibold
+    flex
+    items-center
+    gap-2
+    transition-all
+    duration-300
+    hover:-translate-y-1
+    hover:shadow-xl
+  "
+>
+  <i className="bi bi-heart-fill"></i>
+  Donate Now
+</a>
 
           </div>
 
@@ -169,7 +170,7 @@ export default function Navbar() {
             <div className="flex flex-col gap-6 text-white">
 
               <a
-                href="#about"
+                href="/#about"
                 onClick={() => setMenuOpen(false)}
                 className="hover:text-amber-400 transition"
               >
@@ -177,7 +178,7 @@ export default function Navbar() {
               </a>
 
               <a
-                href="#impact"
+                href="/#impact"
                 onClick={() => setMenuOpen(false)}
                 className="hover:text-amber-400 transition"
               >
@@ -185,7 +186,7 @@ export default function Navbar() {
               </a>
 
               <a
-                href="#work"
+                href="/#work"
                 onClick={() => setMenuOpen(false)}
                 className="hover:text-amber-400 transition"
               >
@@ -193,7 +194,7 @@ export default function Navbar() {
               </a>
 
               <a
-                href="#gallery"
+                href="/#gallery"
                 onClick={() => setMenuOpen(false)}
                 className="hover:text-amber-400 transition"
               >
@@ -201,34 +202,35 @@ export default function Navbar() {
               </a>
 
               <a
-                href="#donate"
+                href="/#donate"
                 onClick={() => setMenuOpen(false)}
                 className="hover:text-amber-400 transition"
               >
                 Donate
               </a>
 
-              <button
-                className="
-                  mt-2
-                  bg-amber-500
-                  hover:bg-amber-400
-                  text-[#2D1A0F]
-                  py-3
-                  rounded-xl
-                  font-semibold
-                  flex
-                  items-center
-                  justify-center
-                  gap-2
-                  transition-all
-                  duration-300
-                "
-              >
-                <i className="bi bi-heart-fill"></i>
-                Donate Now
-              </button>
-
+              <a
+  href="/#donate"
+  onClick={() => setMenuOpen(false)}
+  className="
+    mt-2
+    bg-amber-500
+    hover:bg-amber-400
+    text-[#2D1A0F]
+    py-3
+    rounded-xl
+    font-semibold
+    flex
+    items-center
+    justify-center
+    gap-2
+    transition-all
+    duration-300
+  "
+>
+  <i className="bi bi-heart-fill"></i>
+  Donate Now
+</a>
             </div>
 
           </div>
