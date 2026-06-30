@@ -11,34 +11,56 @@ export default function Gallery() {
   ];
 
   return (
-    <section id="gallery" className="bg-[#f8f5ef] py-32">
-      <div className="max-w-7xl mx-auto px-8">
+    <section
+      id="gallery"
+      className="bg-[#f8f5ef] py-20 md:py-32"
+    >
+      <div className="max-w-7xl mx-auto px-5 md:px-8">
 
-        <p className="text-amber-700 uppercase tracking-[0.3em] mb-4">
+        {/* Heading */}
+        <p className="text-amber-700 uppercase tracking-[0.3em] text-xs md:text-sm mb-3">
           Gallery
         </p>
 
-        <h2 className="text-5xl font-bold text-[#2d1a0f] mb-4">
+        <h2 className="text-3xl md:text-5xl font-bold text-[#2d1a0f] mb-4">
           Moments That Matter
         </h2>
 
-        <p className="text-xl text-gray-600 mb-12">
+        <p className="text-base md:text-xl text-gray-600 mb-10 md:mb-14 max-w-2xl">
           Every smile tells a story of hope, growth and belonging.
         </p>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        {/* Images */}
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
 
           {images.map((img, index) => (
             <div
               key={index}
-              className="overflow-hidden rounded-3xl shadow-lg"
+              className="
+                overflow-hidden
+                rounded-2xl
+                md:rounded-3xl
+                shadow-lg
+                hover:shadow-2xl
+                transition-all
+                duration-300
+              "
             >
               <Image
                 src={img}
-                alt="Gallery"
+                alt={`Gallery ${index + 1}`}
                 width={500}
                 height={350}
-                className="w-full h-[300px] object-cover hover:scale-110 transition duration-500"
+                className="
+                  w-full
+                  h-40
+                  sm:h-48
+                  md:h-[300px]
+                  object-cover
+                  transition-transform
+                  duration-500
+                  hover:scale-110
+                "
               />
             </div>
           ))}
