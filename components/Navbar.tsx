@@ -112,7 +112,7 @@ export default function Navbar() {
             </a>
 
             <a
-  href="/#donate"
+  href="/donate"
   className="
     bg-amber-500
     hover:bg-amber-400
