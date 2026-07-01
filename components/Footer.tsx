@@ -199,7 +199,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="https://www.instagram.com/ebenezer_childcare_centre/"
+                href="https://www.instagram.com/ebenezerchildcarecenter/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-amber-500 transition"
