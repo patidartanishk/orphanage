@@ -44,21 +44,79 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Get Involved */}
-          <div>
-            <h4 className="font-bold text-[#2d1a0f] text-lg mb-5">
-              Get Involved
-            </h4>
+         {/* Get Involved */}
 
-            <ul className="space-y-3 text-gray-600">
-              <li><a href="/#donate"  className="hover:text-amber-600 transition">Donate</a></li>
-            </ul>
+<div>
+  <h4 className="font-bold text-[#2d1a0f] text-lg mb-5">
+    Get Involved
+  </h4>
 
-            <button className="mt-6 bg-amber-500 hover:bg-amber-400 text-black px-8 py-4 rounded-xl font-semibold transition w-full sm:w-auto hover:scale-105">
-              Donate Now
-            </button>
-          </div>
+  <ul className="space-y-3 text-gray-600 mb-6">
+    <li>
+      <a
+        href="/#donate"
+        className="hover:text-amber-600 transition"
+      >
+        Contribute
+      </a>
+    </li>
 
+    <li>
+      <a
+        href="https://wa.me/919845216239?text=Hello%20Ebenezer%20Child%20Care%20Centre,%20I%20would%20like%20to%20become%20a%20volunteer."
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-green-600 transition"
+      >
+        Become a Volunteer
+      </a>
+    </li>
+
+    <li>
+      <a
+        href="/#visit"
+        className="hover:text-sky-600 transition"
+      >
+        Plan a Visit
+      </a>
+    </li>
+
+  <li>
+    <a
+  href="/#donate"
+  className="
+    bg-amber-500
+    hover:bg-amber-400
+    text-[#2D1A0F]
+
+    px-6
+    py-3
+
+    rounded-xl
+
+    font-semibold
+
+    flex
+    items-center
+    justify-center
+    gap-2
+
+    transition-all
+    duration-300
+
+    hover:-translate-y-1
+    hover:shadow-xl
+
+    w-full
+  "
+>
+  <i className="bi bi-heart-fill"></i>
+
+  Donate Now
+</a>
+  </li>
+  </ul>
+</div>
           {/* Legal */}
           <div>
             <h4 className="font-bold text-[#2d1a0f] text-lg mb-5">

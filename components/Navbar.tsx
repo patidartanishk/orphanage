@@ -61,9 +61,9 @@ export default function Navbar() {
 
             <div>
 
-              <h1 className="text-sm sm:text-lg lg:text-[2rem] font-bold text-white tracking-tight leading-tight">
-                Ebenezer Child Care Centre
-              </h1>
+             <h1 className="text-xs sm:text-base lg:text-2xl font-bold text-white tracking-tight leading-tight">
+  Ebenezer Child Care Centre
+</h1>
 
               <p className="hidden lg:block mt-1 text-sm text-amber-200 font-medium">
                 A Home. A Future. A Hope.
@@ -108,7 +108,7 @@ export default function Navbar() {
               href="/#donate"
               className="hover:text-amber-400 transition"
             >
-              Donate
+              Contribute
             </a>
 
             <a
