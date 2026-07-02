@@ -117,7 +117,7 @@ export default function Hero() {
 
   {/* Support Us */}
   <a
-    href="#donate"
+    href="/donate"
     className="
       bg-amber-500
       hover:bg-amber-400
